@@ -253,20 +253,48 @@
 // console.log(countVowels(name));
 
 //Qs. Create an arrow function to perform the same task.
-const countVowels = (str) => {
-  let flag = 0;
-  for (let i = 0; i < str.length; i++) {
-    if (
-      str[i] == "a" ||
-      str[i] == "e" ||
-      str[i] == "i" ||
-      str[i] == "o" ||
-      str[i] == "u"
-    ) {
-      flag++;
-    }
-  }
-  return flag;
-};
-name = prompt("Enter any string : ");
-console.log(countVowels(name));
+// const countVowels = (str) => {
+//   let flag = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     if (
+//       str[i] == "a" ||
+//       str[i] == "e" ||
+//       str[i] == "i" ||
+//       str[i] == "o" ||
+//       str[i] == "u"
+//     ) {
+//       flag++;
+//     }
+//   }
+//   return flag;
+// };
+// name = prompt("Enter any string : ");
+// console.log(countVowels(name));
+
+// forEach loop in JS
+// ------------------------
+
+// arr = [1, 2, 3, 4, 5];
+// arr.forEach(function printVal(val) {
+//   console.log(val);
+// });
+
+// arr = [1, 2, 3, 4, 5];
+// arr.forEach((val) => {
+//   console.log(val);
+// });
+
+// arr = [1, 2, 3, 4, 5];
+// arr.forEach((val, idx, arr) => {
+//   console.log(`The value at ${idx} index is: ${val}`);
+//   console.log(arr);
+// });
+
+// Practice Question
+// -----------------------
+// Qs. For a given array of numbers, print the square of each value using the forEach loop.
+
+arr = [1, 2, 3, , 4, 5];
+arr.forEach((val) => {
+  console.log(`The square of ${val} is ${val ** 2}`);
+});
