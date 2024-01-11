@@ -294,7 +294,66 @@
 // -----------------------
 // Qs. For a given array of numbers, print the square of each value using the forEach loop.
 
-arr = [1, 2, 3, , 4, 5];
-arr.forEach((val) => {
-  console.log(`The square of ${val} is ${val ** 2}`);
+// arr = [1, 2, 3, , 4, 5];
+// arr.forEach((val) => {
+// console.log(`The square of ${val} is ${val ** 2}`);
+// });
+
+// More Array Methods()
+
+// 1)Map() Method
+// arr = [3, 4, 5, 6, 7];
+// const output = arr.map((val) => {
+//   return val ** 2;
+// });
+
+// console.log(output);
+
+// 2)reduce() Method
+
+// arr = [9, 45, 7, 22, 5];
+// const output = arr.reduce((prev, curr) => {
+//   return prev > curr ? prev : curr;
+// });
+
+// console.log(output);
+
+// 3)filter() method
+// arr = [1, 2, 3, 4, , 5, 6, 7, 8, 9, 10];
+// const output = arr.filter((val) => {
+//   return val % 2 == 0;
+// });
+
+// console.log(output);
+
+// Practice Question
+// -----------------------
+
+// We are given array of marks of students. Filter our of the marks of students that scored 90+.
+
+// arr = [87, 93, 64, 99, 86];
+// const output = arr.filter((val) => {
+//   return val > 90;
+// });
+// console.log(output);
+
+// Practice Question
+// Qs. Take a number n as input from user. Create an array of numbers from 1 to n.
+// Use the reduce method to calculate sum of all numbers in the array.
+// Use the reduce method to calculate product of all numbers in the array.
+
+let n = prompt("enter the size of the array : ");
+arr = [];
+for (let i = 1; i <= n; i++) {
+  arr[i] = Number(prompt(`enter the element${i} of array: `));
+}
+
+const sum = arr.reduce((prev, curr) => {
+  return prev + curr;
 });
+console.log(sum);
+
+const mul = arr.reduce((prev, curr) => {
+  return prev * curr;
+});
+console.log(mul);
